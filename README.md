@@ -5,6 +5,6 @@ Thousands of medical records are misreported or forged everyday. Hundreds of dec
 
 A system that can be trusted to guarantee your data's authenticity and ownership without involving third parties, yet retaining accuracy and security is best build on a decentralized platform. VitalHeath is built on top of a blockchain to record your vital health parameters and protect them from abuse in case of a mishap.
 
-This has been built using the blockapps framework employing smart contracts with solidity on the ethereum blockchain. To know more, you can look at our source code on Github. Our website is at vital-health.co 
-
 [![YOUTUBE VIDEO](https://img.youtube.com/vi/XLOVJovkhQU/0.jpg)](https://www.youtube.com/watch?v=XLOVJovkhQU)
+
+This has been built using the blockapps framework employing smart contracts with solidity on the ethereum blockchain. To know more, you can look at our source code on Github. Our website is at vital-health.co 
