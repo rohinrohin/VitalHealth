@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>VitalHealth</title>
+
+  <link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-stat.css">
+
+</head>
+
+<body>
+  <video id="videobg" class="bgbanner" autoplay="" autostart="" loop="">
+      <source src="background-video.mp4" type="video/mp4">
+  </video>
+  <div class="overlay-vid"></div>
+  <div class='brand'>
+    <a href='rohin.me' target='_blank'>
+      <img src='logo-inv.png'>
+    </a>
+  </div>
+  <div class='login'>
+    <div class="logo-wrapper">
+      <img class="logo-login" style="float: left; width: 30px; "src='logo-green.png'>
+      <img class="logo-login" style="float: right; width: 31px;" src='vault.png'>
+    </div>
+    <div class='login_title'>
+      <div class="vhealth">VitalHealth</div>
+      <div class="loginmsg">Login to your account</div>
+    </div>
+    <div class='login_fields'>
+      <div class='login_fields__user'>
+        <div class='icon'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+        </div>
+        <input placeholder='Username' type='text'>
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+        </input>
+      </div>
+      <div class='login_fields__password'>
+        <div class='icon'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
+        </div>
+        <input placeholder='Password' type='password'>
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </div>
+      <div class='login_fields__submit'>
+        <input type='submit' value='Log In'>
+        <div class='forgot'>
+          <a href='#'>Forgotten password?</a>
+        </div>
+      </div>
+    </div>
+    <div class='success'>
+      <div class="success-wrapper">
+        <div class="user-info">
+          <div class="user-wrap">
+            <img src="qr.png" class="qrimg">
+            <div class="usertext">
+              <h1 style=""> Rohin Gopalakrishnan </h1>
+              <h1 style="font-family: 'Open Sans'; font-weight: 200; font-size: 1.5em;"> #633490893999 <a href="http://vital-health.co"> [logout] </a> </h1>
+            </div>
+          </div>
+          <div class="death-wrap">
+              <h1 class="health-status">Healthy</h1>
+          </div>
+        </div>
+<!--        <h1>User Stats</h1>-->
+        <div class="charts-container cf">
+          <div class="chart" id="graph-1-container">
+            <h2 class="title">Heart Rate</h2>
+            <div class="chart-svg">
+              <svg class="chart-line" id="chart-1" viewBox="0 0 80 40">
+                <defs>
+                  <clipPath id="clip" x="0" y="0" width="80" height="40">
+                    <rect id="clip-rect" x="-80" y="0" width="77" height="38.7" />
+                  </clipPath>
+
+                  <linearGradient id="gradient-1">
+                    <stop offset="0" stop-color="#00d5bd" />
+                    <stop offset="100" stop-color="#24c1ed" />
+                  </linearGradient>
+
+                  <linearGradient id="gradient-2">
+                    <stop offset="0" stop-color="#954ce9" />
+                    <stop offset="0.3" stop-color="#954ce9" />
+                    <stop offset="0.6" stop-color="#24c1ed" />
+                    <stop offset="1" stop-color="#24c1ed" />
+                  </linearGradient>
+
+
+                  <linearGradient id="gradient-3" x1="0%" y1="0%" x2="0%" y2="100%">>
+                    <stop offset="0" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0.07" />
+                    <stop offset="0.5" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0.13" />
+                    <stop offset="1" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0" />
+                  </linearGradient>
+
+
+                  <linearGradient id="gradient-4" x1="0%" y1="0%" x2="0%" y2="100%">>
+                    <stop offset="0" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0.07" />
+                    <stop offset="0.5" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0.13" />
+                    <stop offset="1" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0" />
+                  </linearGradient>
+
+                </defs>
+              </svg>
+              <h3 class="valueX">time</h3>
+            </div>
+            <div class="chart-values">
+              <p class="h-value">1689h</p>
+              <p class="percentage-value"></p>
+              <div><img class="hrt" src="heart.ico" />
+                <p class="total-gain"></p>
+              </div>
+            </div>
+            <!--    <div class="triangle green"></div>-->
+          </div>
+          <div class="chart" id="graph-2-container">
+            <h2 class="title">Temperature</h2>
+            <div class="chart-svg">
+              <svg class="chart-line" id="chart-2" viewBox="0 0 80 40">
+              </svg>
+              <h3 class="valueX">time</h3>
+            </div>
+            <div class="chart-values">
+              <p class="h-value">322h</p>
+              <p class="percentage-value"></p>
+              <div><img class="hrt" src="temp.png" />
+                <p class="total-gain"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ticker">
+            Hello
+        </div>
+      </div>
+
+    </div>
+    <div class='disclaimer'>
+      <p>Powered by <a href="">BlockApps. </a><br> Learn more about Ethereum and Smart Contracts <a href="https://www.ethereum.org/">here.</a><br>Contact us at <a>contact@vital-health.co</a> </p>
+    </div>
+  </div>
+  <div class='authent'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+    <p>Authenticating...</p>
+  </div>
+  <div class="love">
+    <p style="font-size: 16px;">
+      Made with <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/love_copy.png"> by <a href="rohin.me" target="_blank"> VitalHealth Team</a> for the <a>VirtualGovHack</a>
+    </p>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+  <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+  crossorigin="anonymous"></script>
+
+
+
+  <script src="js/index.js"></script>
+  <script src="js/index-stat.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89937668-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Hotjar Tracking Code for vital-health.co -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:383327,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</body>
+
+</html>
