@@ -93,8 +93,8 @@ function repeat() {
           }
         }
       
-        //isDead = (chart_1_y[0] < 30) && (chart_2_y[0] < 30);
-        isDead = true;
+        isDead = (chart_1_y[chart_1_y.length-1] < 30) && (chart_2_y[chart_2_y.length-1] < 30);
+        //isDead = true;
 
 	
         dodead = function(){
@@ -109,7 +109,7 @@ function repeat() {
          }
         }
 	};
-	//dodead();
+	dodead();
 
         console.log(chart_1_y);
         console.log(chart_2_y);
