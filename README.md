@@ -7,3 +7,4 @@ A system that can be trusted to guarantee your data's authenticity and ownership
 
 This has been built using the blockapps framework employing smart contracts with solidity on the ethereum blockchain. To know more, you can look at our source code on Github. Our website is at vital-health.co 
 
+[![YOUTUBE VIDEO](https://img.youtube.com/vi/XLOVJovkhQU/0.jpg)](https://www.youtube.com/watch?v=XLOVJovkhQU)
